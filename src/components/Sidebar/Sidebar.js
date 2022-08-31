@@ -1,63 +1,16 @@
 import "./Sidebar.css";
 import React from "react";
+import Sidebaritem from "../Sidebaritem/Sidebaritem";
 
 function Sidebar() {
 	return (
 		<div className="sidebar">
-			Sidebar
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
-			<p>hlakejrfadf</p>
+			<ul className="sidebar__ul">
+				<Sidebaritem />
+				<Sidebaritem />
+				<Sidebaritem />
+				<Sidebaritem />
+			</ul>
 		</div>
 	);
 }
