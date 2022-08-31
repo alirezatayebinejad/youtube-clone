@@ -1,0 +1,8 @@
+.recomended {
+	flex: 1;
+	background-color: rgb(245, 245, 245);
+}
+.recomended::-webkit-scrollbar-thumb {
+	display: none !important;
+	background-color: red;
+}
