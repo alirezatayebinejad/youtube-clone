@@ -1,12 +1,15 @@
 import "./App.css";
-import Header from "./components/Header/Header";
 import Home from "./Pages/Home/Home";
+import Header from "./components/Header/Header";
+import { BasketProvider } from "./contexts/burgerMenuContext";
 function App() {
 	return (
-		<div className="app">
-			<Header />
-			<Home />
-		</div>
+		<BasketProvider>
+			<div className="app">
+				<Header />
+				<Home />
+			</div>
+		</BasketProvider>
 	);
 }
 

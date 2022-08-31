@@ -1,14 +1,13 @@
 import "./Sidebaritem.css";
-import React from "react";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import React, { useState } from "react";
 
-function Sidebaritem({ active = false }) {
+function Sidebaritem({ icon, text }) {
+	const isActive = useState(false);
+
 	return (
-		<li className={`sidebaritem ${active && "active"}`}>
-			<div className="sidebaritem__icon">
-				<HomeOutlinedIcon />
-			</div>
-			<p>Home</p>
+		<li className={`sidebaritem ${isActive === true ? "active" : ""}`}>
+			<div className="sidebaritem__icon">{icon}</div>
+			<p className="sidebaritem__text">{text}</p>
 		</li>
 	);
 }
