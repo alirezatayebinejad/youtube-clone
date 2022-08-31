@@ -1,0 +1,10 @@
+.sidebar {
+	flex: 0.18;
+	height: calc(100vh - 56px);
+	position: sticky;
+	top: 56px;
+	overflow-y: hidden;
+}
+.sidebar:hover {
+	overflow-y: auto;
+}

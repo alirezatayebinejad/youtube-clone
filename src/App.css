@@ -6,3 +6,24 @@
 	font-family: "Roboto", sans-serif;
 	--redBrand: #ff0000;
 }
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #ffffff00;
+	margin-top: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.521);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.267);
+}
