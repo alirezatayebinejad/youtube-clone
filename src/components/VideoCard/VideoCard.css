@@ -1,0 +1,29 @@
+.videocard {
+	width: 100%;
+	cursor: pointer;
+}
+.videocard__thumbnail {
+	width: 100%;
+	aspect-ratio: 16/9;
+}
+.videocard__title {
+	font-weight: 500;
+	font-size: 13px;
+}
+.videocard__desc {
+	display: flex;
+	padding: 10px 0;
+}
+.videocard__channelname {
+	color: rgb(95, 95, 95);
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+}
+.videocard__logo {
+	padding-right: 10px;
+}
+.videocard__data {
+	color: rgb(95, 95, 95);
+	font-size: 12px;
+}

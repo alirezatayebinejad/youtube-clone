@@ -2,7 +2,24 @@
 	flex: 1;
 	background-color: rgb(245, 245, 245);
 }
-.recomended::-webkit-scrollbar-thumb {
-	display: none !important;
-	background-color: red;
+.recommended__videocards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+	padding: 23px;
+}
+@media screen and (max-width: 750px) {
+	.recommended__videocards {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@media screen and (max-width: 600px) {
+	.recommended__videocards {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (max-width: 500px) {
+	.recommended__videocards {
+		grid-template-columns: 1fr;
+	}
 }
