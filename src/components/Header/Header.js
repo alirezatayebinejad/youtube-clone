@@ -1,24 +1,21 @@
 import "./Header.css";
-import React, { useContext } from "react";
+import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import VideoCallOutlinedIcon from "@mui/icons-material/VideoCallOutlined";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import { Avatar } from "@mui/material";
-import burgerMenuContext from "../../contexts/burgerMenuContext";
 
 function Header() {
-	const { changeBurgerStatus } = useContext(burgerMenuContext);
-
 	return (
 		<div className="header">
 			<div className="header__left">
-				<MenuIcon className="header__left__burger" onClick={() => changeBurgerStatus()} />
+				<MenuIcon className="header__left__burger" />
 				<img className="header__left__logo" src="../../images/yt-logo.png" alt="youtube logo png" />
 			</div>
 			<div className="header__mid">
 				<div className="header__mid__search">
-					<input placeholder="Search" type="text" />
+					<input placeHolder="Search" type="text" />
 					<div className="header__mid__search__icon">
 						<SearchIcon />
 					</div>

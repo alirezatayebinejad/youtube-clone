@@ -1,6 +1,5 @@
 .recomended {
-	flex: 1;
-	background-color: rgb(245, 245, 245);
+	flex: 0.84;
 }
 .recomended::-webkit-scrollbar-thumb {
 	display: none !important;
