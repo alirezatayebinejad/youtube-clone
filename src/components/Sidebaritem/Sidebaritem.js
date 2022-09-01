@@ -1,11 +1,9 @@
 import "./Sidebaritem.css";
-import React, { useState } from "react";
+import React from "react";
 
-function Sidebaritem({ icon, text }) {
-	const isActive = useState(false);
-
+function Sidebaritem({ icon, text, isActive = false }) {
 	return (
-		<li className={`sidebaritem ${isActive === true ? "active" : ""}`}>
+		<li className={`sidebaritem ${isActive && "active"}`}>
 			<div className="sidebaritem__icon">{icon}</div>
 			<p className="sidebaritem__text">{text}</p>
 		</li>

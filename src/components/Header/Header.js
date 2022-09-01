@@ -27,7 +27,7 @@ function Header() {
 			<div className="header__right">
 				<VideoCallOutlinedIcon className="header__right__video" />
 				<NotificationsOutlinedIcon className="header__right__notif" />
-				<Avatar src="/broken-image.jpg" className="header__right__avatar" />
+				<Avatar src="../../../images/logoPew.jpg" className="header__right__avatar" />
 			</div>
 		</div>
 	);

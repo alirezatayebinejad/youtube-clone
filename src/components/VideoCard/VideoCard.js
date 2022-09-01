@@ -15,10 +15,12 @@ function VideoCard({ thumbnailSrc, title, logoSrc, channelName, views, date, isV
 					<p className="videocard__title">{title}</p>
 					<p className="videocard__channelname">
 						{channelName}
-						{isVerified && <CheckCircleIcon sx={{ fontSize: 18 }} />}
+						{isVerified && <CheckCircleIcon sx={{ fontSize: 15 }} />}
 					</p>
 					<p className="videocard__data">
-						{views} <b>.</b> {date}
+						{views}
+						<b> . </b>
+						{date}
 					</p>
 				</div>
 			</div>

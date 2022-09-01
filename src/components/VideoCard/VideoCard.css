@@ -19,6 +19,7 @@
 	font-size: 12px;
 	display: flex;
 	align-items: center;
+	padding: 5px 0;
 }
 .videocard__logo {
 	padding-right: 10px;

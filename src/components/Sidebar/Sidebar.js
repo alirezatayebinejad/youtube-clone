@@ -22,13 +22,14 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@mui/icons-material/FeedbackOutlined";
+
 function Sidebar() {
 	const { burgerOpen } = useContext(burgerMenuContext);
 
 	return (
 		<div className={`sidebar  ${burgerOpen === false ? "sidebar--closed" : "sidebar--opened"}`}>
 			<ul className="sidebar__ul">
-				<Sidebaritem icon={<HomeOutlinedIcon />} text={"Home"} />
+				<Sidebaritem icon={<HomeOutlinedIcon />} text={"Home"} isActive={true} />
 				<Sidebaritem icon={<ExploreOutlinedIcon />} text={"Explore"} />
 				<Sidebaritem icon={<PlayArrowOutlinedIcon />} text={"Shorts"} />
 				<Sidebaritem icon={<SubscriptionsOutlinedIcon />} text={"Subscriptions"} />
@@ -44,10 +45,10 @@ function Sidebar() {
 			</ul>
 			<h5 className="sidebar__titles">SUBSCRIPTIONS</h5>
 			<ul className="sidebar__ul ">
-				<Sidebaritem icon={<Avatar src="../images/channel1.jpg" sx={{ width: 25, height: 25 }} />} text={"mr beasts"} />
-				<Sidebaritem icon={<Avatar src="../images/channel2.jpg" sx={{ width: 25, height: 25 }} />} text={"pew die pie"} />
-				<Sidebaritem icon={<Avatar src="../images/channel3.jpg" sx={{ width: 25, height: 25 }} />} text={"airrack"} />
-				<Sidebaritem icon={<Avatar src="../images/channel4.jpg" sx={{ width: 25, height: 25 }} />} text={"ryan trahan"} />
+				<Sidebaritem icon={<Avatar src="../images/logoMrBeast.jpg" sx={{ width: 25, height: 25 }} />} text={"mr beasts"} />
+				<Sidebaritem icon={<Avatar src="../images/logoPew.jpg" sx={{ width: 25, height: 25 }} />} text={"pew die pie"} />
+				<Sidebaritem icon={<Avatar src="../images/logoAirrack.jpg" sx={{ width: 25, height: 25 }} />} text={"airrack"} />
+				<Sidebaritem icon={<Avatar src="../images/logoRyan.jpg" sx={{ width: 25, height: 25 }} />} text={"ryan trahan"} />
 			</ul>
 			<h5 className="sidebar__titles">Explore</h5>
 			<ul className="sidebar__ul ">

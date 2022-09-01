@@ -41,15 +41,13 @@
 	.sidebar--opened {
 		transform: translate(-100%);
 		width: 80%;
-		height: inherit;
-		position: absolute;
+		position: fixed;
 		opacity: 0;
 	}
 	.sidebar--closed {
 		transform: translate(0%);
 		width: 80%;
-		height: inherit;
-		position: absolute;
+		position: fixed;
 		opacity: 1;
 	}
 }
